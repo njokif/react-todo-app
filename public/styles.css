@@ -1,7 +1,50 @@
-html {
-    font-family: "Montserrat", sans-serif;
-  }
-  body {
-    background: #eee;
-    padding: 0 16px;
-  }
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-item .task-name {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.todo-item .delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.todo-item.completed .task-name {
+  text-decoration: line-through;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.input-container input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.input-container button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

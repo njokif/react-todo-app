@@ -29,7 +29,9 @@ function App() {
           style={{ textDecoration: task.completed ? "line-through" : "none" }}
         >
           {task.name}
-          <button onClick={() => toggleComplete(task.id)}></button>
+          <button onClick={() => toggleComplete(task.id)}>
+            {task.completed ? "✔" : "○"}
+          </button>
         </div>
       ))}
     </div>
